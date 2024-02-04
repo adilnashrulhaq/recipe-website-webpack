@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
+.nav-custom {
+    padding: 40px 108px;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+}
+
+.card {
+    font-family: 'Poppins', sans-serif;
+}
+
+.second-text {
+    color: #969696;
+    font-size: 14px;
+}
+
+.card-head {
+    position: absolute;
+    width: 26rem;
+    font-family: 'Poppins', sans-serif;
+    left: 120px;
+    margin-top: 10rem;
+}
+.recommended {
+    height: fit-content;
+}
+
+.recommended .rec-recipe {
+    width: 50% !important; 
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 0;
+}
+
+.recommended .spesial,
+.recommended #recomRecipe {
+    width: 50% !important; 
+}
+
+.btn-recipe {
+    background-color: #EFC033;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-recipe:hover {
+    background-color: #D8A300;
+    transform: scale(0.98);
+}
+
+.mr-2 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: 3rem;
+}
+
+.bg-right {
+    float: right;
+    position: relative;
+    z-index: -1;
+}
+
+#categories {
+    display: flex;
+    flex-wrap: wrap;  /* Memastikan item akan pindah ke baris baru jika tidak cukup lebar */
+}
+
+#categories .btn-recipe {
+    margin-right: 10px; 
+}
+
+
+.filter-meal-box {
+    width: 120px;
+    height: 158px;
+    border: 1px solid #cccccc00;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    border-radius: 12px;
+}
+
+.meal-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.meal-name {
+    font-size: 14px;
+}
+
+.message {
+    font-weight: bold;
+    text-align: center;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-height: 80vh; /* Maksimum tinggi popup agar sesuai dengan 80% dari tinggi viewport */
+    overflow: auto; /* Menambahkan scroll jika kontennya lebih besar dari popup */
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
